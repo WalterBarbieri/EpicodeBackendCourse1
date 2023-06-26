@@ -43,23 +43,40 @@ public class Helloworld {
 		System.out.println(firstString + " " + secondString + " " + thirdString);
 		System.out.println(thirdString + " " + secondString + " " + firstString);
 
-		// Esercizio 4
+		// Esercizio 4.1
 
-		System.out.println("Esercizio 4");
+		System.out.println("Esercizio 4.1");
 
-		double perimetroRettRes = perimetroRettangolo(5.5, 7.8);
+		System.out.println("Lato maggiore: ");
+		double latoMaggiore = input.nextDouble();
+		System.out.println("Lato minore: ");
+		double latoMinore = input.nextDouble();
+
+		double perimetroRettRes = perimetroRettangolo(latoMaggiore, latoMinore);
 		System.out.println(perimetroRettRes);
 
-		// Esercizio 5
-		System.out.println("Esercizio 5");
+		// Esercizio 4.2
+		System.out.println("Esercizio 4.2");
 
-		int numPariDispari = pariDispari(19);
+		System.out.println("Inserire un numero intero: ");
+		int numIntero = input.nextInt();
+
+		int numPariDispari = pariDispari(numIntero);
 		System.out.println(numPariDispari);
 
-		// Esercizio 6
-		System.out.println("Esercizio 6");
+		// Esercizio 4.3
+		System.out.println("Esercizio 4.3");
 
-		double areaTriangolo = perimetroTriangolo(2.4, 4.7, 6.1);
+		System.out.println("Lato triangolo 1: ");
+		double latoTriangolo1 = input.nextDouble();
+
+		System.out.println("Lato triangolo 2: ");
+		double latoTriangolo2 = input.nextDouble();
+
+		System.out.println("Lato triangolo 3: ");
+		double latoTriangolo3 = input.nextDouble();
+
+		double areaTriangolo = perimetroTriangolo(latoTriangolo1, latoTriangolo2, latoTriangolo3);
 		System.out.println(Math.sqrt(areaTriangolo));
 
 		input.close();
